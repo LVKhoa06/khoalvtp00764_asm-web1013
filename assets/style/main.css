@@ -1,0 +1,35 @@
+:root {
+    --color-app-01: #f7941d;
+    --color-app-02: #cf2e2e;
+    --color-app-03: #a22531;
+    --color-app-03: #f7941d;
+    --color-text-01: #27323d;
+    --color-grey-01: #909498;
+    --color-grey-02: #a3a7ac;
+    --color-grey-03: #b1b5b9;
+    --color-black-01: #111;
+    --color-black-02: #222;
+    --color-black-03: #333;
+    --color-white-01: #ffffff;
+    --color-white-02: #f4f4f4;
+    --color-white-03: #eaeaea;
+}
+
+* {
+    padding: 0;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+img {
+    width: 100%;
+}
+
+#grid {
+    max-width: 1200px;
+}
