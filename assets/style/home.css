@@ -27,13 +27,13 @@
 .container-left {
     width: 20%;
     display: flex;
-    margin-top: 220px;
+    margin-top: 290px;
 }
 
 .container-left_nav {
     display: flex;
     flex-direction: column;
-    padding: 20px;
+    padding: 20px 40px 20px 10px;
     border-radius: 2px;
     height: fit-content;
     margin: 20px 0 0 20px;
@@ -183,6 +183,7 @@
     display: flex;
     margin-top: 8px;
     position: relative;
+    align-items: center;
 }
 
 #industry {
