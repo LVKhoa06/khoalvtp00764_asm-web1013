@@ -198,15 +198,8 @@
 
 #industry option {
     background: rgba(255, 255, 255, .1);
-    color: var(--color-white-01);
-}
-
-#industry option[value="Phú Yên"],
-#industry option[value="Đà Nẵng"],
-#industry option[value="Bình Định"],
-#industry option[value="Thừa Thiên Huế"] {
-    background: rgba(255, 255, 255, .1) !important;
     color: var(--color-black-01);
+
 }
 
 #industry:focus {
