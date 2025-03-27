@@ -1,0 +1,6 @@
+.container-slider {
+    background-color: antiquewhite;
+    width: 100%;
+    top: 0;
+    object-fit: contain;
+}

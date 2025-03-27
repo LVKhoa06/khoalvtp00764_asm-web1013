@@ -1,0 +1,98 @@
+header {
+    background-color: rgba(0, 0, 0, .17);
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 10;
+}
+
+.header-top {
+    height: 45px;
+    padding: 10px 0;
+}
+
+.header-top_list {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 100%;
+}
+
+.header-top_item {
+    margin-left: 15px;
+    color: var(--color-white-01);
+    font-size: 13px;
+}
+
+.header-top_item:hover {
+    color: var(--color-app-03);
+    text-decoration: underline;
+}
+
+.header-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-bottom-left {
+    width: 210px;
+}
+
+.header-bottom-right {
+    display: flex;
+}
+
+.header-bottom_list {
+    display: none;
+    position: absolute;
+    background: white;
+    flex-direction: column;
+    width: 250px;
+    left: -5px;
+    top: 32px;
+    z-index: 9;
+    box-shadow: 0 0 3px var(--color-grey-03);
+    border-radius: 6px;
+}
+
+.header-bottom_list a {
+    color: var(--color-black-02) !important;
+    padding: 10px;
+    font-size: 13px;
+}
+
+.header-bottom_item {
+    margin-left: 16px;
+    cursor: pointer;
+    text-transform: uppercase;
+    color: var(--color-white-01);
+    font-size: 13px;
+    padding: 10px 0;
+    position: relative;
+}
+
+
+.header-bottom_item:hover {
+    color: var(--color-app-03) !important;
+    text-decoration: underline;
+}
+
+.header-bottom_item:hover .a {
+    color: var(--color-app-03);
+}
+
+.header-bottom_list a:hover {
+    color: var(--color-app-03) !important;
+    text-decoration: underline;
+    background-color: var(--color-white-02);
+    border-radius: 6px;
+}
+
+.header-bottom_item:hover .header-bottom_list {
+    display: flex;
+}
+
+.header-bottom_item a:visited {
+    color: var(--color-white-01);
+}

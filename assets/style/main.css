@@ -1,8 +1,9 @@
 :root {
-    --color-app-01: #f7941d;
+    --color-app-01: #ff6900;
     --color-app-02: #cf2e2e;
-    --color-app-03: #a22531;
     --color-app-03: #f7941d;
+    --color-app-04: #a22531;
+    --color-app-05: #192041;
     --color-text-01: #27323d;
     --color-grey-01: #909498;
     --color-grey-02: #a3a7ac;
@@ -17,19 +18,26 @@
 
 * {
     padding: 0;
-    margin: 0 auto;
+    margin: 0;
     box-sizing: border-box;
 }
 
 html,
 body {
     height: 100%;
+    font-family: 'Roboto', sans-serif;
+    scroll-behavior: smooth;
 }
 
 img {
     width: 100%;
 }
 
+a {
+    text-decoration: none;
+}
+
 #grid {
     max-width: 1200px;
+    margin: 0 auto;
 }
