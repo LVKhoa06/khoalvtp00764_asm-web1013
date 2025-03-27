@@ -1,5 +1,6 @@
 footer {
     background-color: var(--color-app-05);
+    background: linear-gradient(to top, rgba(25, 32, 65, 1), rgba(0, 0, 0, 1));
 }
 
 .footer-container {
