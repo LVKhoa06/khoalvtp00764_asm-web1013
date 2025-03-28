@@ -16,7 +16,7 @@ footer img {
 }
 
 footer h2,
-h3 {
+footer h3 {
     color: var(--color-app-03);
     text-transform: uppercase;
 }

@@ -50,7 +50,7 @@ header {
     flex-direction: column;
     width: 250px;
     left: -5px;
-    top: 32px;
+    top: 36px;
     z-index: 9;
     box-shadow: 0 0 3px var(--color-grey-03);
     border-radius: 6px;
@@ -67,7 +67,7 @@ header {
     cursor: pointer;
     text-transform: uppercase;
     color: var(--color-white-01) !important;
-    font-size: 13px;
+    font-size: 15px;
     padding: 10px 0;
     position: relative;
 }
