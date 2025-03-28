@@ -173,7 +173,7 @@
     color: var(--color-app-03);
 }
 
-.industry-item-list p:hover {
+.industry-item-list a:hover {
     color: var(--color-app-03);
     background-color: rgba(255, 255, 255, .6);
     padding: 0 3px;
@@ -204,7 +204,7 @@
     width: 100%;
 }
 
-.industry-item-list p {
+.industry-item-list a {
     font-weight: 800;
     font-size: 18px;
     color: var(--color-white-01);
