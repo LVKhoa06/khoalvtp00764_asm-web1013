@@ -4,14 +4,56 @@
     object-fit: contain;
 }
 
-/* ----------------------- */
-
 .container {
     display: flex;
+    flex-direction: column;
     /* background-image: url("https://www.gifcen.com/wp-content/uploads/2023/10/neon-gif-1.gif"); */
     /* background-size: cover; */
     /* background-repeat: no-repeat; */
 }
+
+.overlay1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.2);
+}
+
+.overlay2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+/* Title START */
+.title {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    margin: 35px 0;
+}
+
+.title h1 {
+    text-transform: uppercase;
+    color: var(--color-text-01);
+}
+
+.title hr {
+    width: 80px;
+    border: 0.5px solid var(--color-app-03);
+    margin-top: 20px;
+}
+
+/* Title END */
+
+
+/* Counters START */
 
 .container-counters {
     background-image: url("https://polyschool.fpt.edu.vn/wp-content/uploads/FPT_Polytechnic_banner-1-2.jpg");
@@ -19,6 +61,7 @@
     height: 370px;
     display: flex;
     align-items: center;
+    margin-bottom: 45px;
 }
 
 .counters-list {
@@ -46,6 +89,7 @@
 
 .counters-list_item_info h2 {
     font-size: 30px;
+    color: var(--color-text-01);
 }
 
 .counters-list_item_info p {
@@ -54,4 +98,118 @@
     font-weight: 700;
 }
 
-/* ----------------------------- */
+/* Counters END */
+
+/* Industry START */
+
+.container-industry {
+    display: flex;
+    height: 424px;
+    width: 58%;
+    margin: 45px auto;
+}
+
+.industry-item {
+    background-size: cover;
+    width: 33.33%;
+    padding: 30px;
+    position: relative;
+    cursor: default;
+    user-select: none;
+}
+
+.industry-item:hover .industry-item-background {
+    filter: blur(5px);
+}
+
+.industry-item-background {
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: filter 0.3s ease;
+}
+
+.industry-item .title {
+    text-align: center;
+    margin: 50% 0;
+    color: var(--color-white-01);
+    z-index: 99;
+}
+
+.industry-item .title h1 {
+    z-index: 99;
+    color: var(--color-white-01);
+    text-shadow: 0 0 4px var(--color-text-01);
+}
+
+.industry-item .title hr {
+    z-index: 99;
+}
+
+.industry-item::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.industry-item:hover .industry-item-list {
+    display: flex !important;
+}
+
+.industry-item:hover .title {
+    top: 0;
+    margin-top: 10px;
+}
+
+.industry-item:hover .title h1 {
+    text-shadow: none;
+    color: var(--color-app-03);
+}
+
+.industry-item-list p:hover {
+    color: var(--color-app-03);
+    background-color: rgba(255, 255, 255, .6);
+    padding: 0 3px;
+    border-radius: 4px;
+    text-decoration: underline;
+}
+
+.industry-item-background1 {
+    background-image: url("https://polyschool.fpt.edu.vn/wp-content/uploads/2019/12/OK.jpg");
+}
+
+.industry-item-background2 {
+    background-image: url("https://polyschool.fpt.edu.vn/wp-content/uploads/2019/12/world-graphics-day-background_23-2147788754-1.jpg");
+}
+
+.industry-item-background3 {
+    background-image: url("https://polyschool.fpt.edu.vn/wp-content/uploads/CNTT-Flat-design.jpg");
+}
+
+.industry-item-list {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 40%;
+    left: 0;
+    width: 100%;
+}
+
+.industry-item-list p {
+    font-weight: 800;
+    font-size: 18px;
+    color: var(--color-white-01);
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+/* Industry END */
