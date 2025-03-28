@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container-left">
+        <div class="container-left_nav">
+            <h3><i class="icon__list fa fa-bars"></i> DANH MỤC</h3>
+            <a class="container-left_nav-item" href="#">
+                <span>Danh mục 1</span>
+            </a>
+            <a class="container-left_nav-item" href="#">
+                <span>Danh mục 2</span>
+            </a>
+            <a class="container-left_nav-item" href="#">
+                <span>Danh mục 3</span>
+            </a>
+            <a class="container-left_nav-item" href="#">
+                <span>Danh mục 4</span>
+            </a>
+            <a class="container-left_nav-item" href="#">
+                <span>Danh mục 5</span>
+            </a>
+            <a class="container-left_nav-item" href="#">
+                <span>Danh mục 6</span>
+            </a>
+        </div>
+    </div>
+    <div class="container-right">
+        <div id="modal__logout">
+            <div class="modal__body">
+                <div class="auth__form ">
+                    <div class="auth__form__header">
+                        <h3 class="auth__form__header__heading">Đăng kí nhập học</h3>
+                        <a href="#modal__login">
+                        </a>
+                    </div>
+
+                    <div class="auth__form__form">
+                        <div class="auth__form__group">
+                            <input type="text" class="auth__form__input" placeholder="Họ và tên">
+                        </div>
+
+                        <div class="auth__form__group">
+                            <input type="text" class="auth__form__input" placeholder="Số điện thoại">
+                        </div>
+
+                        <div class="auth__form__group">
+                            <input type="email" class="auth__form__input" placeholder="Email">
+                        </div>
+
+                        <div class="auth__form__group">
+                            <input type="date" class="auth__form__input datepicker-input" placeholder="dd-mm-yyyy"
+                                value="">
+                        </div>
+                        <div class="auth__form__group">
+                            <select id="industry" name="industry">
+                                <option value=" " selected disabled hidden>Chọn ngành nghề</option>
+                                <option value="Ngành công nghệ thông tin">Ngành công nghệ thông tin</option>
+                                <option value="Ngành kiến trúc">Ngành kiến trúc</option>
+                                <option value="Ngành quản trị kinh doanh">Ngành quản trị kinh doanh</option>
+                                <option value="Ngành Marketing">Ngành Marketing</option>
+                                <option value="Khác">Khác</option>
+                            </select>
+                        </div>
+
+                        <div class="auth__form__group gender_form">
+                            <p>Giới tính:</p>
+                            <div>
+                                <input type="radio" name="gender" id="male">
+                                <span class="checkmark"></span>
+                                <label>Nam</label>
+                            </div>
+                            <div>
+                                <input type="radio" name="gender" id="female">
+                                <span class="checkmark"></span>
+                                <label>Nữ</label>
+
+                            </div>
+                            <div>
+                                <input type="radio" name="gender" id="other">
+                                <span class="checkmark"></span>
+                                <label>Khác</label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="auth__form__controls">
+                        <a href="#">
+                            <button class="btn btn-back">NHẬP LẠI</button>
+                        </a>
+                        <a href="#">
+                            <button class="btn btn--primary">ĐĂNG KÍ</button>
+                        </a>
+                    </div>
+                </div>
+                <div class="auth__form__socials">
+                    <a href="#" class="btn btn--with-icon btn--with-icon--fb">
+                        <i class="fa fa-facebook-square auth__form__socials__icon"> </i>
+                        Kết nối với Facebook
+                    </a>
+
+                    <a href="#" class="btn btn--with-icon btn--with-icon--google">
+                        <i class="fa fa-google auth__form__socials__icon"></i>
+                        Kết nối với Google
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
