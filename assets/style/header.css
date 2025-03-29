@@ -72,6 +72,11 @@ header {
     position: relative;
 }
 
+.header-bottom_item a {
+    color: var(--color-white-01);
+}
+
+
 
 .header-bottom_item:hover {
     color: var(--color-app-03) !important;
