@@ -207,11 +207,12 @@
 }
 
 .industry-item-list a {
-    font-weight: 800;
-    font-size: 18px;
+    font-weight: 700;
+    font-size: 16.5px;
     color: var(--color-white-01);
     margin-bottom: 10px;
     cursor: pointer;
+    text-align: center;
 }
 
 /* Industry END */
