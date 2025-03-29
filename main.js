@@ -5,10 +5,13 @@ let totalSlides;
 let slideWidth;
 let index = 0;
 let slideInterval;
+let btnOnTop;
+
 
 window.onload = function () {
     slider = document.getElementById('partner-slider');
     slides = document.querySelectorAll('.partner-slider-slide');
+    btnOnTop = document.getElementById("btn-ontop");
     totalSlides = slides.length / 2;
     slideWidth = slides[0].clientWidth;
 }
@@ -50,3 +53,15 @@ function restartInterval() {
 }
 slideInterval = setInterval(nextSlide, 5000);
 // Partner slider END
+
+function backToTop() {
+    window.scrollTo({ top: 0 });
+}
+window.addEventListener("scroll", function () {
+    if (window.scrollY > 300) {
+        btnOnTop.style.display = "flex";
+    }
+    else {
+        btnOnTop.style.display = "none";
+    }
+});
