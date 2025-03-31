@@ -54,6 +54,8 @@ function restartInterval() {
 slideInterval = setInterval(nextSlide, 5000);
 // Partner slider END
 
+
+// Back to top START
 function backToTop() {
     window.scrollTo({ top: 0 });
 }
@@ -65,3 +67,17 @@ window.addEventListener("scroll", function () {
         btnOnTop.style.display = "none";
     }
 });
+// Back to top END
+
+// Hide | Show START
+function hide(id) {
+    const elm = document.getElementById(id);
+    elm.style.display = "none";
+}
+
+function show(id) {
+    const elm = document.getElementById(id);
+    elm.style.display = "block";
+}
+
+// Hide | Show END
