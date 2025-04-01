@@ -6,6 +6,10 @@ header {
     z-index: 99999999999999999;
 }
 
+.header-pages {
+    background: linear-gradient(to bottom, rgb(255, 105, 0), rgba(255 255, 255, 1));
+}
+
 .header-top {
     height: 45px;
     padding: 10px 0;
@@ -26,6 +30,11 @@ header {
 
 .header-top_item:hover {
     color: var(--color-app-03);
+    text-decoration: underline;
+}
+
+.header-pages .header-top_item:hover {
+    color: var(--color-grey-04);
     text-decoration: underline;
 }
 
