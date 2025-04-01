@@ -46,7 +46,7 @@ header {
 .header-bottom_list {
     display: none;
     position: absolute;
-    background: white;
+    background: var(--color-white-01);
     flex-direction: column;
     width: 250px;
     left: -5px;
@@ -56,10 +56,48 @@ header {
     border-radius: 6px;
 }
 
-.header-bottom_list a {
+.header-bottom_link {
     color: var(--color-black-02) !important;
     padding: 10px;
     font-size: 13px;
+    position: relative;
+}
+
+.header-bottom_link:hover {
+    color: var(--color-app-03) !important;
+    text-decoration: underline;
+    background-color: var(--color-white-02);
+    border-radius: 6px;
+}
+
+.header-bottom_link-child {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    left: 250.2px;
+    width: 250px;
+    background-color: var(--color-white-01);
+    z-index: 9;
+    box-shadow: 0 0 3px var(--color-grey-03);
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+    display: none;
+    top: 0;
+}
+
+.header-bottom_link-parent span {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header-bottom_link-parent span i {
+    font-size: 11px;
+    color: var(--color-grey-03);
+}
+
+.header-bottom_link-parent:hover .header-bottom_link-child {
+    display: flex !important;
 }
 
 .header-bottom_item {
@@ -83,15 +121,8 @@ header {
     text-decoration: underline;
 }
 
-.header-bottom_item:hover .a {
+.header-bottom_item:hover .item-no-list {
     color: var(--color-app-03);
-}
-
-.header-bottom_list a:hover {
-    color: var(--color-app-03) !important;
-    text-decoration: underline;
-    background-color: var(--color-white-02);
-    border-radius: 6px;
 }
 
 .header-bottom_item:hover .header-bottom_list {
