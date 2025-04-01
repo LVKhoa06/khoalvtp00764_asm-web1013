@@ -6,6 +6,7 @@ let slideWidth;
 let index = 0;
 let slideInterval;
 let btnOnTop;
+let header;
 
 
 window.onload = function () {
@@ -14,6 +15,7 @@ window.onload = function () {
     btnOnTop = document.getElementById("btn-ontop");
     totalSlides = slides.length / 2;
     slideWidth = slides[0].clientWidth;
+    header = document.querySelector(".header-bottom-fixed");
 }
 
 function updateSlider() {
@@ -55,19 +57,36 @@ slideInterval = setInterval(nextSlide, 5000);
 // Partner slider END
 
 
-// Back to top START
+// Scroll event START
 function backToTop() {
     window.scrollTo({ top: 0 });
 }
+
 window.addEventListener("scroll", function () {
-    if (window.scrollY > 300) {
+    if (window.scrollY > 170) {
         btnOnTop.style.display = "flex";
+
+        header.style.display = "flex";
+        header.style.alignItem = "center";
+        header.style.position = "fixed";
+        header.style.top = 0;
+        header.style.left = 0;
+        header.style.height = "77px";
+        header.style.width = "100%";
+        header.style.background = "linear-gradient(to bottom, rgb(255, 105, 0), rgba(255 255, 255, 1))";
+
+
     }
     else {
         btnOnTop.style.display = "none";
+
+        header.style.background = "transparent";
+        header.style.display = "block";
+        header.style.height = "auto";
+        header.style.position = "relative";
     }
 });
-// Back to top END
+// Scroll envent END
 
 // Hide | Show START
 function hide(id) {
@@ -81,3 +100,4 @@ function show(id) {
 }
 
 // Hide | Show END
+
