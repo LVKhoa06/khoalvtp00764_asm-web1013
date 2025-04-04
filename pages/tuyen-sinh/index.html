@@ -9,10 +9,59 @@
     <link rel="stylesheet" href="../../assets/style/main.css">
     <link rel="stylesheet" href="../../assets/style/header.css">
     <link rel="stylesheet" href="../../assets/style/footer.css">
+    <link rel="stylesheet" href="./style.css">
+    <script src="../../main.js"></script>
 
 </head>
 
 <body>
+    <div onclick="show('form-contact-now')" class="contact-now">
+        <img src="https://public-gcs.subiz-cdn.com/dashboard-v4/public/img/bubble/bubble_lib_03.svg" alt="">
+    </div>
+    <div id="form-contact-now" class="form-contact-now">
+        <i onclick="hide('form-contact-now')" class="form-contact-now-close-icon fa-solid fa-xmark"></i>
+        <div class="form-contact-now-top">
+            <div class="form-contact-now-top-left">
+                <img src="https://vcdn.subiz-cdn.com/file/firvyxehbkeksjzwewoq_128_11710e111b155447aea7b5089dcc1c261ec3cbb2a30a07d749c0b4c829208bbb_acqowkjdndlcwgulxswz_acqowkjdndlcwgulxswz"
+                    alt="">
+            </div>
+            <div class="form-contact-now-top-right">
+                <h4>FPT Polyschool</h4>
+                <p>Bạn có thắc mắc gì, hãy hỏi ngay nhé! Cán bộ trường sẽ tư vấn chi tiết cho bạn!</p>
+            </div>
+        </div>
+        <div class="form-contact-now-center">
+            <div class="form-contact-now-center-top">
+                <p>
+                    Hiện tại, chúng tôi không trực tuyến. Bạn vui lòng để lại tin nhắn, chúng tôi sẽ sớm liên hệ lại với
+                    bạn.
+                </p>
+                <div class="form-contact-now-center-top-input">
+                    <label for="">Họ và tên <span>*</span></label>
+                    <input type="text">
+                </div>
+                <div class="form-contact-now-center-top-input">
+                    <label for="">Số điện thoại <span>*</span></label>
+                    <input type="text">
+                </div>
+                <div class="form-contact-now-center-top-input form-contact-now-center-top-input-message">
+                    <label for="">Tin nhắn <span>*</span></label>
+                    <textarea aria-controls="none" name="" id=""></textarea>
+                </div>
+
+            </div>
+            <div class="form-contact-now-center-bottom">
+                <a href="#"><i class="fa-brands fa-facebook-messenger"></i> <span>Messenger</span></a>
+
+            </div>
+        </div>
+        <div class="form-contact-now-bottom">
+            <button>Để lại tin nhắn</button>
+        </div>
+    </div>
+    <div onclick="backToTop();" id="btn-ontop">
+        <i class="fa-solid fa-chevron-up"></i>
+    </div>
     <header class="header-pages">
         <div id="grid">
             <div class="header-top">
@@ -40,7 +89,9 @@
         <div class="header-bottom-fixed">
             <div class="header-bottom" id="grid">
                 <div class="header-bottom-left">
-                    <img src="../../assets/img/logo-white.png" alt="">
+                    <a href="../../index.html">
+                        <img src="../../assets/img/logo-white.png" alt="">
+                    </a>
                 </div>
                 <div class="header-bottom-right">
                     <div class="header-bottom_item">
@@ -145,7 +196,189 @@
         </div>
     </header>
 
+    <div id="grid">
+        <div class="container">
+            <div class="container-left">
+                <h1>Học phí</h1>
+                <h2>HỌC KỲ VÀ HỌC PHÍ ÁP DỤNG GIAI ĐOẠN TRUNG CẤP</h2>
+                <h3>(Áp dụng nhập học 2025)</h3>
+                <h3>Áp dụng tại tất cả cơ sở đào tạo trên toàn quốc</h3>
+                <table>
+                    <tbody>
+                        <tr>
+                            <td>NĂM</td>
+                            <td>HỌC KỲ</td>
+                            <td class="normal">HỌC PHÍ</td>
+                        </tr>
+                        <tr>
+                            <td rowspan="3">Năm 1</td>
+                            <td>Học kì 1</td>
+                            <td>14.000.000 VNĐ</td>
+                        </tr>
+                        <tr>
+                            <td>Học kì 2</td>
+                            <td>14.000.000 VNĐ</td>
+                        </tr>
+                        <tr>
+                            <td>Học kì 3</td>
+                            <td>14.000.000 VNĐ</td>
+                        </tr>
+                        <tr>
+                            <td rowspan="3">Năm 2</td>
+                            <td>Học kì 4</td>
+                            <td>14.000.000 VNĐ</td>
+                        </tr>
+                        <tr>
+                            <td>Học kì 5</td>
+                            <td>14.000.000 VNĐ</td>
+                        </tr>
+                        <tr>
+                            <td>Học kì 6</td>
+                            <td>14.000.000 VNĐ</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <h2>HỌC KỲ VÀ HỌC PHÍ ÁP DỤNG GIAI ĐOẠN CAO ĐẲNG</h2>
+                <h3>(Dự kiến)</h3>
+                <table>
+                    <tbody>
+                        <tr>
+                            <td colspan="3">Cơ sở Hà Nội và TP. Hồ Chí Minh</td>
+                        </tr>
+                        <tr>
+                            <td>NĂM</td>
+                            <td>HỌC KỲ</td>
+                            <td class="normal">HỌC PHÍ</td>
+                        </tr>
+                        <tr>
+                            <td rowspan="3">Năm 1</td>
+                            <td>Học kì 1</td>
+                            <td> 13.300.000 VNĐ</td>
+                        </tr>
+                        <tr>
+                            <td>Học kì 2</td>
+                            <td> 13.300.000 VNĐ</td>
+                        </tr>
+                        <tr>
+                            <td>Học kì 3</td>
+                            <td> 13.300.000 VNĐ</td>
+                        </tr>
+                        <tr>
+                            <td colspan="3">Cơ sở Đà Nẵng, Cần Thơ, Tây Nguyên, Hà Nam, Thanh Hóa, Hải Phòng và Quy
+                                Nhơn, Thái Nguyên và Đồng Nai</td>
+                        </tr>
+                        <tr>
+                            <td>NĂM</td>
+                            <td>HỌC KỲ</td>
+                            <td class="normal">HỌC PHÍ</td>
+                        </tr>
+                        <tr>
+                            <td rowspan="3">Năm 2</td>
+                            <td>Học kì 4</td>
+                            <td>10.640.000 VNĐ</td>
+                        </tr>
 
+                        <tr>
+                            <td>Học kì 5</td>
+                            <td>10.640.000 VNĐ</td>
+                        </tr>
+                        <tr>
+                            <td>Học kì 6</td>
+                            <td>10.640.000 VNĐ</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <ul>
+                    <li>Học phí giai đoạn Trung cấp áp dụng cho sinh viên nhập học năm 2025 và không thay đổi trong quá
+                        trình học</li>
+                    <li>Học phí giai đoạn Cao đẳng áp dụng theo học phí tại thời điểm chuyển tiếp, Bảng trên là mức tham
+                        khảo năm 2025</li>
+                    <li>Học phí thu theo kỳ, đóng vào đầu các học kỳ</li>
+                    <li>Học phí đã bao gồm: Lệ phí nhập học, sách giáo trình chuyên ngành (Nếu có)</li>
+                    <li>Học phí không bao gồm các chi phí cá nhân như: SGK Văn hóa phổ thông, BHYT, Võ Phục,...</li>
+                    <li>100% sinh viên phải tự trang bị laptop để phục vụ học tập ngay từ học kỳ đầu tiên</li>
+                </ul>
+            </div>
+
+            <style>
+
+            </style>
+            <div class="container-right">
+                <div class="container-right-top">
+                    <a href="#" class="container-top-right-item">
+                        <i class="fa-solid fa-people-group"></i>
+                        <p>Thông báo tuyển sinh</p>
+                    </a>
+                    <a href="#" class="container-top-right-item">
+                        <i class="fa-solid fa-book-atlas"></i>
+                        <p>Chương trình đào tạo</p>
+                    </a>
+                    <a href="#" class="container-top-right-item">
+                        <i class="fa-solid fa-clipboard-check"></i>
+                        <p>Quy chế tuyển sinh</p>
+                    </a>
+                    <a href="#" class="container-top-right-item">
+                        <i class="fa-solid fa-file-pen"></i>
+                        <p>Phiếu đăng ký học</p>
+                    </a>
+                    <a href="#" class="container-top-right-item">
+                        <i class="fa-solid fa-person-chalkboard"></i>
+                        <p>Hướng dẫn nhập học</p>
+                    </a>
+                    <a href="#" class="container-top-right-item">
+                        <i class="fa-solid fa-comments-dollar"></i>
+                        <p>Học phí</p>
+                    </a>
+                    <a href="#" class="container-top-right-item">
+                        <i class="fa-solid fa-circle-question"></i>
+                        <p>Câu hỏi thường gặp</p>
+                    </a>
+                </div>
+                <div class="container-right-center">
+                    <h2>Tin nổi bật</h2>
+                    <div class="container-right-center-content">
+                        <div class="container-right-center-content-item">
+                            <img src="https://polyschool.fpt.edu.vn/wp-content/uploads/dia-diem-chieu-150x150.jpg"
+                                alt="">
+                            <div class="content-item-right">
+                                <a href="#">HÀNH TRÌNH ĐIỆN ẢNH CỦA BEECINE’S DAY 2025: ĐỊA CHỈ CÁC RẠP CHIẾU PHIM TRÊN
+                                    TOÀN QUỐC
+                                </a>
+                                <span>2 Tháng Tư, 2025</span>
+                            </div>
+                        </div>
+                        <div class="container-right-center-content-item">
+                            <img src="https://polyschool.fpt.edu.vn/wp-content/uploads/z6437145801323_3cf29f82109e94ad7632adb20855f560-150x150.jpg"
+                                alt="">
+                            <div class="content-item-right">
+                                <a href="#">Sinh viên K19 chuyên ngành Digital Marketing tại FPT PolySchool: Khi sáng
+                                    tạo nội
+                                    dung trở thành nghệ thuật</a>
+                                <span>1 Tháng Tư, 2025</span>
+                            </div>
+                        </div>
+                        <div class="container-right-center-content-item">
+                            <img src="https://polyschool.fpt.edu.vn/wp-content/uploads/z6461981139740_3eefb837850f9d977a8eb65cb357567e-150x150.jpg"
+                                alt="">
+                            <div class="content-item-right">
+                                <a href="#">
+                                    BEECINE’S DAY 2025: HƠN CẢ MỘT SỰ KIỆN, ĐÓ LÀ SỨ MỆNH GIÁO DỤC</a>
+                                <span>1 Tháng Tư, 2025</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="container-right-bottom">
+                    <a href="https://www.youtube.com/channel/UCGF73SUAjkefBo9H9DZ_EZw">FPT POLYSCHOOL ON YOUTUBE</a>
+                    <iframe width="293px" height="165px" src="https://www.youtube.com/embed/Ng5ANgan4GE"
+                        title="GIỚI THIỆU PHỔ THÔNG CAO ĐẲNG FPT POLYTECHNIC" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin">
+                    </iframe>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <footer>
         <div class="footer-container" id="grid">

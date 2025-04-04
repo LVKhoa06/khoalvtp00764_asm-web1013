@@ -1,0 +1,202 @@
+.container {
+    margin-top: 200px;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 100px;
+}
+
+
+:root {
+    --text: "14.000.000 VNĐ"
+}
+
+.container-left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 75%;
+    justify-content: space-between;
+}
+
+
+.container-left table,
+.container-left table tbody,
+.container-left table tbody tr,
+.container-left table tbody tr td {
+    text-align: center;
+    border: 1px solid var(--color-grey-03);
+    border-collapse: collapse;
+}
+
+.container-left table {
+    width: 100%;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 14px;
+    margin-bottom: 30px;
+}
+
+.normal {
+    font-weight: 700 !important;
+}
+
+.container-left table tbody tr td {
+    padding: 8px 90px;
+}
+
+.container-left table tbody tr td[rowspan="3"] {
+    font-weight: 500;
+    text-transform: none;
+}
+
+.container-left table tbody tr td[colspan="3"] {
+    text-transform: none;
+}
+
+.container-left table tbody tr td:last-child {
+    font-weight: 400;
+}
+
+
+
+.container-left h1,
+.container-left h2,
+.container-left h3 {
+    margin: 18px 0;
+}
+
+.container-left h2 {
+    color: var(--color-app-01);
+    text-transform: uppercase;
+    font-style: italic;
+}
+
+.container-left h3 {
+    font-size: 25px;
+    font-style: italic;
+    font-weight: 400;
+}
+
+.container-left ul {
+    margin-right: 20%;
+}
+
+.container-left ul li {
+    font-size: 14px;
+    line-height: 1.7;
+}
+
+.container-left ul li:last-child {
+    font-weight: 700;
+    font-style: italic;
+}
+
+.container-right {
+    width: 22%;
+    height: 100px;
+    margin-top: 20px;
+}
+
+.container-right-top {
+    border: 1px solid var(--color-grey-03);
+    border-radius: 5px;
+}
+
+.container-top-right-item {
+    display: flex;
+    align-items: center;
+    padding: 15px 0px 15px 15px;
+    cursor: pointer;
+    font-size: 15px;
+    border: 1px solid transparent;
+}
+
+.container-top-right-item i {
+    margin-right: 10px;
+    max-width: 20px;
+    min-width: 20px;
+    color: var(--color-app-03);
+    transition: color .3s ease;
+
+}
+
+.container-top-right-item p {
+    color: var(--color-black-03);
+    text-transform: uppercase;
+    font-weight: 700;
+    transition: color .3s ease;
+
+}
+
+
+.container-top-right-item:hover {
+    border: 1px dashed var(--color-app-01);
+}
+
+.container-top-right-item:hover p,
+.container-top-right-item:hover i {
+    color: var(--color-app-01);
+}
+
+.container-top-right-item:hover p {
+    text-decoration: underline;
+}
+
+.container-right-center-content-item {
+    margin: 25px 0;
+    display: flex;
+}
+
+.container-right-center-content-item img {
+    width: 35%;
+    object-fit: cover;
+    height: 100%;
+    margin: 7px 20px 0 0;
+    border-radius: 3px;
+}
+
+.container-right-center h2 {
+    margin: 50px 0 10px 0;
+    color: var(--color-text-01);
+}
+
+.content-item-right {
+    display: flex;
+    flex-direction: column;
+}
+
+.content-item-right a {
+    color: var(--color-text-01);
+    font-size: 15px;
+    cursor: pointer;
+    transition: color .3s ease;
+    font-weight: 500;
+}
+
+.content-item-right a:hover {
+    color: var(--color-app-03);
+    text-decoration: underline;
+}
+
+.content-item-right span {
+    color: var(--color-grey-01);
+    font-size: 13px;
+    margin-top: 8px;
+
+}
+
+.container-right-bottom {
+    margin-top: 50px;
+}
+
+.container-right-bottom a {
+    font-size: 21px;
+    word-spacing: 1px;
+    letter-spacing: -1.5px;
+    font-weight: 700;
+    color: var(--color-app-03);
+}
+
+.container-right-bottom iframe {
+    margin-top: 20px;
+}
