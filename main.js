@@ -5,17 +5,12 @@ let totalSlides;
 let slideWidth;
 let index = 0;
 let slideInterval;
-let btnOnTop;
-let header;
-
 
 window.onload = function () {
     slider = document.getElementById('partner-slider');
     slides = document.querySelectorAll('.partner-slider-slide');
-    btnOnTop = document.getElementById("btn-ontop");
     totalSlides = slides.length / 2;
     slideWidth = slides[0].clientWidth;
-    header = document.querySelector(".header-bottom-fixed");
 }
 
 function updateSlider() {
@@ -63,6 +58,9 @@ function backToTop() {
 }
 
 window.addEventListener("scroll", function () {
+    const btnOnTop = document.getElementById("btn-ontop");
+
+    const header = document.querySelector(".header-bottom-fixed");
     if (window.scrollY > 170) {
         btnOnTop.style.display = "flex";
 

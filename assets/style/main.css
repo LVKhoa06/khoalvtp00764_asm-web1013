@@ -57,3 +57,206 @@ a {
     max-width: 1300px;
     margin: 0 auto;
 }
+
+#btn-ontop {
+    position: fixed;
+    bottom: 30px;
+    right: 20px;
+    background-color: var(--color-text-01);
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--color-white-01);
+    cursor: pointer;
+    border-radius: 4px;
+    box-shadow: 0 0 2px var(--color-white-01);
+    display: none;
+}
+
+#btn-ontop:hover {
+    background-color: var(--color-app-02);
+    transition: background-color .3s ease;
+}
+
+/* Contact now START */
+
+.contact-now {
+    position: fixed;
+    width: 240px;
+    height: auto;
+    bottom: 30px;
+    left: 0px;
+    cursor: pointer;
+}
+
+.form-contact-now {
+    position: fixed;
+    bottom: 20px;
+    left: 15px;
+    height: 700px;
+    width: 370px;
+    /*  !important */
+    box-shadow: 0 5px 25px 0 rgba(0, 0, 0, 0.24);
+    display: none;
+    z-index: 99;
+}
+
+.form-contact-now-close-icon {
+    position: absolute;
+    right: 15px;
+    top: 12px;
+    font-size: 20px;
+    color: var(--color-white-01);
+    cursor: pointer;
+}
+
+.form-contact-now-top {
+    display: flex;
+    width: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    height: 15%;
+    background: linear-gradient(315deg, rgb(243, 78, 139) 0%, rgb(255, 213, 0) 100%);
+}
+
+.form-contact-now-top-left {
+    width: 18%;
+}
+
+.form-contact-now-top-left img {
+    width: 60%;
+    border-radius: 50%;
+    margin-left: 13px;
+    margin-top: 13px;
+}
+
+.form-contact-now-top-right {
+    width: 82%;
+    padding: 10px 22px 15px 0px;
+}
+
+.form-contact-now-top-right h4 {
+    color: var(--color-white-01);
+}
+
+.form-contact-now-top-right p {
+    color: var(--color-white-02);
+}
+
+.form-contact-now-center {
+    background-color: var(--color-white-01);
+    width: 100%;
+    height: 77%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.form-contact-now-center-top {
+    width: 90%;
+    height: fit-content;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.15) !important;
+    padding: 18px;
+    margin-top: 18px;
+    border-radius: 10px;
+}
+
+.form-contact-now-center-top p {
+    line-height: 1.1;
+}
+
+.form-contact-now-center-top-input {
+    display: flex;
+    flex-direction: column;
+    font-size: 16px;
+}
+
+.form-contact-now-center-top-input label {
+    color: var(--color-black-03);
+    margin-top: 8px;
+}
+
+.form-contact-now-center-top-input span {
+    color: var(--color-app-02);
+}
+
+
+.form-contact-now-center-top-input input {
+    height: 35px;
+    border-radius: 5px;
+    border: 1px solid var(--color-grey-04);
+    padding-left: 8px;
+    font-size: 15px;
+    outline: none;
+}
+
+.form-contact-now-center-top-input input:focus,
+.form-contact-now-center-top-input textarea:focus {
+    border: 1px solid var(--color-app-03) !important;
+}
+
+
+.form-contact-now-center-top-input textarea {
+    outline: none;
+    max-width: 100%;
+    min-width: 100%;
+    max-height: 55px;
+    min-height: 55px;
+    height: 55px;
+    font-size: 15px;
+    border-radius: 5px;
+    border: 1px solid var(--color-grey-04);
+    padding: 8px;
+}
+
+.form-contact-now-center-top-input textarea {}
+
+
+.form-contact-now-center-top-input-message input {
+    height: 55px;
+}
+
+
+.form-contact-now-bottom {
+    background-color: var(--color-white-01);
+    width: 100%;
+    height: 8%;
+    border-top: 1px solid var(--color-grey-04);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.form-contact-now-center-bottom {
+    margin-bottom: 8px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.form-contact-now-center-bottom a {
+    color: var(--color-grey-02);
+}
+
+.form-contact-now-bottom button {
+    background-color: var(--color-app-06);
+    color: var(--color-white-01);
+    width: 240px;
+    height: 40px;
+    border: 1px solid var(--color-white-01);
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.form-contact-now-bottom button:hover {
+    background-color: var(--color-app-03);
+}
+
+
+
+/* Contact now END */
