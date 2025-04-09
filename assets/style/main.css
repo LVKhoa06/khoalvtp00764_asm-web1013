@@ -58,6 +58,13 @@ a {
     margin: 0 auto;
 }
 
+.active {
+    background: var(--color-app-01) !important;
+    color: var(--color-white-01) !important;
+    border: 1px solid var(--color-app-01) !important;
+    border-radius: 2px !important;
+}
+
 #btn-ontop {
     position: fixed;
     bottom: 30px;

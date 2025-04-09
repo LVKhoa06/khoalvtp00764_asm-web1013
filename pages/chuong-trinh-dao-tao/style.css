@@ -1,0 +1,121 @@
+.container {}
+
+.content {
+    margin-top: 230px;
+}
+
+.content h1 {
+    text-align: center;
+    margin-bottom: 70px;
+    color: var(--color-text-01);
+}
+
+.content img {
+    border-radius: 5px;
+}
+
+.content-buttons {}
+
+.content-buttons-btn {
+    background: var(--color-white-01);
+    outline: none;
+    border: 1px solid var(--color-grey-03);
+    padding: 12px 20px;
+    cursor: pointer;
+    border-radius: 2px;
+    transition: all 0.4s ease;
+}
+
+.content-buttons-btn:hover {
+    background: var(--color-app-01);
+    color: var(--color-white-01);
+    border-color: var(--color-app-01);
+}
+
+.content-item {
+    border: 1px solid var(--color-grey-03);
+    margin-top: -1px;
+    padding: 35px 25px;
+}
+
+.content-item h2 {
+    font-size: 25px;
+    color: var(--color-black-03);
+    margin-bottom: 18px;
+    font-weight: 500;
+}
+
+.content-item p,
+.content-item li {
+    font-size: 14px;
+    color: var(--color-black-03);
+    line-height: 1.6;
+}
+
+.content-content-2 {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 45px;
+}
+
+.content-item ul {
+    margin-left: 18px;
+    padding-right: 20px;
+}
+
+.content-relative {
+    margin-top: 50px;
+}
+
+.content-relative h2 {
+    text-align: center;
+    color: var(--color-text-01);
+    margin-bottom: 30px;
+}
+
+.content-relative-items {
+    display: flex;
+    width: 100%;
+}
+
+.content-relative-item {
+    position: relative;
+    margin-right: 30px;
+}
+
+.content-relative-item:hover .content-relative-item-img img {
+    filter: blur(5px);
+}
+
+.content-relative-item-img img {
+    width: 300px;
+    transition: filter 0.3s ease;
+}
+
+.content-relative-item-img button {
+    /* display: none; */
+    position: absolute;
+    top: 30%;
+    left: 30%;
+    cursor: pointer;
+    width: 120px;
+    height: 40px;
+    background-color: rgba(0, 0, 0, 0.4);
+    border: 1px solid var(--color-white-01);
+    color: var(--color-white-01);
+    border-radius: 4px;
+}
+
+/* .industry-item:hover .industry-item-background {
+    filter: blur(5px);
+}
+
+.industry-item-background {
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: filter 0.3s ease;
+} */

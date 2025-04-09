@@ -99,3 +99,13 @@ function show(id) {
 
 // Hide | Show END
 
+// Active button START
+function activeButon(id) {
+    const menuItems = document.querySelectorAll(".content-buttons-btn");
+    menuItems.forEach(item => {
+        item.classList.remove("active");
+    });
+    const activeItem = document.getElementById(id);
+    activeItem.classList.add("active");
+}
+// Active button END
