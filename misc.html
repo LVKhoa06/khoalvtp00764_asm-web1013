@@ -1,118 +1,71 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="vi">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Trang Hiển Thị Flash</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            text-align: center;
+
+        }
+
+        .foo {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+        }
+
+        .flash-container {
+            margin: 30px 0;
+            padding: 15px;
+            border: 1px solid #ddd;
+            background-color: #f5f5f5;
+            border-radius: 5px;
+            margin: 20px;
+        }
+
+        h1 {
+            color: #2c3e50;
+        }
+
+        .method {
+            font-weight: bold;
+            color: #e74c3c;
+            margin-bottom: 10px;
+        }
+    </style>
 </head>
 
 <body>
-    <div class="container-left">
-        <div class="container-left_nav">
-            <h3><i class="icon__list fa fa-bars"></i> DANH MỤC</h3>
-            <a class="container-left_nav-item" href="#">
-                <span>Danh mục 1</span>
-            </a>
-            <a class="container-left_nav-item" href="#">
-                <span>Danh mục 2</span>
-            </a>
-            <a class="container-left_nav-item" href="#">
-                <span>Danh mục 3</span>
-            </a>
-            <a class="container-left_nav-item" href="#">
-                <span>Danh mục 4</span>
-            </a>
-            <a class="container-left_nav-item" href="#">
-                <span>Danh mục 5</span>
-            </a>
-            <a class="container-left_nav-item" href="#">
-                <span>Danh mục 6</span>
-            </a>
+    <h1>Trình Chiếu Flash</h1>
+    <p>Hiển thị 2 file Flash sử dụng các phương pháp khác nhau</p>
+    <div class="foo">
+        <div class="flash-container">
+            <div class="method">Phương pháp 1: Sử dụng thẻ &lt;embed&gt;</div>
+            <embed src="./798cf1ab56f6ae928a33040ab5308ea62c7cc97da427729422926e006d26a649e41320b974ee95.mp4"
+                type="video/mp4" width="300" height="200">
+            <p>Flash 1 - Hiển thị bằng thẻ embed</p>
+        </div>
+
+        <div class="flash-container">
+            <div class="method">Phương pháp 2: Sử dụng thẻ &lt;object&gt;</div>
+            <object width="300" height="200"
+                data="./798cf1ad56f6ae928a370259e03b8da72c789e2ef127729422926e006d26a649e41320b974ee95.mp4">
+                <param name="movie"
+                    value="./798cf1ad56f6ae928a370259e03b8da72c789e2ef127729422926e006d26a649e41320b974ee95.mp4">
+                <param name="quality" value="high">
+                <param name="wmode" value="transparent">
+            </object>
+            <p>Flash 2 - Hiển thị bằng thẻ object</p>
         </div>
     </div>
-    <div class="container-right">
-        <div id="modal__logout">
-            <div class="modal__body">
-                <div class="auth__form ">
-                    <div class="auth__form__header">
-                        <h3 class="auth__form__header__heading">Đăng kí nhập học</h3>
-                        <a href="#modal__login">
-                        </a>
-                    </div>
 
-                    <div class="auth__form__form">
-                        <div class="auth__form__group">
-                            <input type="text" class="auth__form__input" placeholder="Họ và tên">
-                        </div>
-
-                        <div class="auth__form__group">
-                            <input type="text" class="auth__form__input" placeholder="Số điện thoại">
-                        </div>
-
-                        <div class="auth__form__group">
-                            <input type="email" class="auth__form__input" placeholder="Email">
-                        </div>
-
-                        <div class="auth__form__group">
-                            <input type="date" class="auth__form__input datepicker-input" placeholder="dd-mm-yyyy"
-                                value="">
-                        </div>
-                        <div class="auth__form__group">
-                            <select id="industry" name="industry">
-                                <option value=" " selected disabled hidden>Chọn ngành nghề</option>
-                                <option value="Ngành công nghệ thông tin">Ngành công nghệ thông tin</option>
-                                <option value="Ngành kiến trúc">Ngành kiến trúc</option>
-                                <option value="Ngành quản trị kinh doanh">Ngành quản trị kinh doanh</option>
-                                <option value="Ngành Marketing">Ngành Marketing</option>
-                                <option value="Khác">Khác</option>
-                            </select>
-                        </div>
-
-                        <div class="auth__form__group gender_form">
-                            <p>Giới tính:</p>
-                            <div>
-                                <input type="radio" name="gender" id="male">
-                                <span class="checkmark"></span>
-                                <label>Nam</label>
-                            </div>
-                            <div>
-                                <input type="radio" name="gender" id="female">
-                                <span class="checkmark"></span>
-                                <label>Nữ</label>
-
-                            </div>
-                            <div>
-                                <input type="radio" name="gender" id="other">
-                                <span class="checkmark"></span>
-                                <label>Khác</label>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="auth__form__controls">
-                        <a href="#">
-                            <button class="btn btn-back">NHẬP LẠI</button>
-                        </a>
-                        <a href="#">
-                            <button class="btn btn--primary">ĐĂNG KÍ</button>
-                        </a>
-                    </div>
-                </div>
-                <div class="auth__form__socials">
-                    <a href="#" class="btn btn--with-icon btn--with-icon--fb">
-                        <i class="fa fa-facebook-square auth__form__socials__icon"> </i>
-                        Kết nối với Facebook
-                    </a>
-
-                    <a href="#" class="btn btn--with-icon btn--with-icon--google">
-                        <i class="fa fa-google auth__form__socials__icon"></i>
-                        Kết nối với Google
-                    </a>
-                </div>
-            </div>
-        </div>
-    </div>
 </body>
 
 </html>
