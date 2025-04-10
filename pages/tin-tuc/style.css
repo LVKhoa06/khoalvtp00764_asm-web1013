@@ -1,0 +1,13 @@
+.container {
+    margin-top: 200px;
+}
+
+.container-img-bottom {
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.container-img-top {
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
