@@ -57,10 +57,10 @@
     font-weight: 400;
 }
 
+.container-left h2 {
+    margin-bottom: 18px;
+}
 
-
-.container-left h1,
-.container-left h2,
 .container-left h3 {
     margin: 18px 0;
 }

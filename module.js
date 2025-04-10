@@ -474,9 +474,21 @@ class ButtonOnTop extends HTMLElement {
     </div>`;
     }
 }
+
+class MyTitle extends HTMLElement {
+    connectedCallback() {
+        const title = this.getAttribute('title') || 'Hello World';
+
+        this.innerHTML = `<div class="title">
+            <h1>${title}</h1>
+            <hr>
+        </div>`;
+    }
+}
 customElements.define("my-header", MyHeader);
 customElements.define("my-footer", MyFooter);
 customElements.define("my-second-header", MySecondHeader);
 customElements.define("contact-now", ContactNow);
 customElements.define("button-top", ButtonOnTop);
+customElements.define("my-title", MyTitle);
 // Module END
