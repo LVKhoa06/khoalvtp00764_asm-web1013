@@ -485,10 +485,26 @@ class MyTitle extends HTMLElement {
         </div>`;
     }
 }
+
+class MyImgInfo extends HTMLElement {
+    connectedCallback() {
+        const imgUrl = this.getAttribute('url') || 'Hello World';
+        const info = this.getAttribute('info') || 'Hello World';
+
+        this.innerHTML = `<div class="img-info">
+                    <a href="#">
+                        <img src="${imgUrl}" alt="">
+                    </a>
+                    <p>${info}</p>
+                </div>`;
+    }
+}
+
 customElements.define("my-header", MyHeader);
 customElements.define("my-footer", MyFooter);
 customElements.define("my-second-header", MySecondHeader);
 customElements.define("contact-now", ContactNow);
 customElements.define("button-top", ButtonOnTop);
 customElements.define("my-title", MyTitle);
+customElements.define("my-img-info", MyImgInfo);
 // Module END

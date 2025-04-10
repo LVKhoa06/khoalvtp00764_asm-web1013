@@ -109,6 +109,7 @@ a {
     box-shadow: 0 5px 25px 0 rgba(0, 0, 0, 0.24);
     display: none;
     z-index: 9999;
+    border-radius: 15px;
 }
 
 .form-contact-now-close-icon {
