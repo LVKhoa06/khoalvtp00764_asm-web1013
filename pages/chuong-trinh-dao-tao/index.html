@@ -27,23 +27,29 @@
 
             <img class="content-img-top" src="https://polyschool.fpt.edu.vn/wp-content/uploads/PTPM.jpg" alt="">
             <div class="content-buttons">
-                <button onclick="activeButon('button-content')" id="button-content"
+                <button onclick="activeButon('button-content', 'content-content')" id="button-content"
                     class="active content-buttons-btn">Nội dung</button>
-                <button onclick="activeButon('button-progress')" id="button-progress" class="content-buttons-btn">Tiến
-                    độ
-                    đào tạo</button>
-                <button onclick="activeButon('button-formality')" id="button-formality" class="content-buttons-btn">Hình
+                <button onclick="activeButon('button-progress', 'content-progress')" id="button-progress"
+                    class="content-buttons-btn">
+                    Tiến độ đào tạo
+                </button>
+                <button onclick="activeButon('button-formality', 'content-formality')" id="button-formality"
+                    class="content-buttons-btn">Hình
                     thức tuyển sinh</button>
-                <button onclick="activeButon('button-object')" id="button-object" class="content-buttons-btn">Đối tượng
+                <button onclick="activeButon('button-object', 'content-object')" id="button-object"
+                    class="content-buttons-btn">Đối tượng
                     tuyển sinh</button>
-                <button onclick="activeButon('button-time')" id="button-time" class="content-buttons-btn">Thời gian
+                <button onclick="activeButon('button-time', 'content-time')" id="button-time"
+                    class="content-buttons-btn">Thời gian
                     đào tạo</button>
-                <button onclick="activeButon('button-fee')" id="button-fee" class="content-buttons-btn">Học
+                <button onclick="activeButon('button-fee', 'content-fee')" id="button-fee"
+                    class="content-buttons-btn">Học
                     phí</button>
-                <button onclick="activeButon('button-batch')" id="button-batch" class="content-buttons-btn">Các đợt
+                <button onclick="activeButon('button-batch', 'content-batch')" id="button-batch"
+                    class="content-buttons-btn">Các đợt
                     tuyển sinh</button>
             </div>
-            <div class="content-item content-content">
+            <div class="content-item show" id="content-content">
                 <div class="content-content-1">
                     <h2>TỔNG QUAN</h2>
                     <p>Ngày nay, điện thoại và các thiết bị thông minh đã trở nên phổ biến và dần chiếm ưu thế hơn máy
@@ -105,71 +111,206 @@
                     </ul>
                 </div>
             </div>
-            <!-- <div class="content-item"></div>
-            <div class="content-item"></div>
-            <div class="content-item"></div>
-            <div class="content-item"></div>
-            <div class="content-item"></div>
-            <div class="content-item"></div> -->
-
-            <div class="content-relative">
-                <h2>Chương trình đào tạo liên quan</h2>
-                <div class="content-relative-items">
-                    <div class="content-relative-item">
-                        <div class="content-relative-item-img">
-                            <div class="content-relative-item-img-1 content-relative-item-img-img"></div>
-                            <a href="#">
-                                <button>START NOW</button>
-                            </a>
-                        </div>
-                        <a href="#">
-                            <h3>LẬP TRÌNH WEB</h3>
-                        </a>
-                    </div>
-                    <div class="content-relative-item">
-                        <div class="content-relative-item-img">
-                            <div class="content-relative-item-img-2 content-relative-item-img-img"></div>
-                            <a href="#">
-                                <button>START NOW</button>
-                            </a>
-                        </div>
-                        <a href="#">
-                            <h3>ỨNG DỤNG PHẦN MỀM</h3>
-                        </a>
-                    </div>
-                    <div class="content-relative-item">
-                        <div class="content-relative-item-img">
-                            <div class="content-relative-item-img-3 content-relative-item-img-img"></div>
-                            <a href="#">
-                                <button>START NOW</button>
-                            </a>
-                        </div>
-                        <a href="#">
-                            <h3>PHÁT TRIỂN PHẦN MỀM</h3>
-                        </a>
-                    </div>
-
+            <div class="content-item" id="content-progress">
+                <div class="content-progress-top">
+                    <h2>TIẾN ĐỘ ĐÀO TẠO CHUYÊN NGÀNH PHÁT TRIỂN PHẦN MỀM - GIAI ĐOẠN TRUNG CẤP</h2>
+                    <p>Chuyên ngành hẹp 1 (CN1): PTPM sử dụng công nghệ Java</p>
+                    <p>Chuyên ngành hẹp 2 (CN2): PTPM sử dụng công nghệ .Net</p>
                 </div>
-            </div>
-            <div class="content-commnent-form">
-                <hr>
+                <div class="content-progress-bottom">
+                    <table>
+                        <tr>
+                            <td rowspan="3"></td>
+                        </tr>
+                    </table>
+                </div>
 
-                <h2>BÌNH LUẬN</h2>
-                <p>Email của bạn sẽ không được hiển thị công khai. Các trường bắt buộc được đánh dấu
-                    <span>*</span>
-                </p>
-
-                <label for="">Họ tên <span>*</span></label>
-                <input required type="text">
-
-                <label for="">Email <span>*</span></label>
-                <input type="email" name="">
-
-                <label for="">Bình luận</label>
-                <textarea name="" id=""></textarea>
-                <button>Gửi bình luận</button>
             </div>
         </div>
+        <div class="content-item" id="content-formality">
+            <h1>XÉT TUYỂN HỒ SƠ</h1>
+            <div class="content-item-formality">
+                <button>
+                    Đăng ký ngay
+                </button>
+            </div>
+        </div>
+        <div class="content-item" id="content-object">
+            <p>Thí sinh tốt nghiệp THCS sẽ đủ điều kiện trở thành sinh viên của FPT PolySchool</p>
+        </div>
+        <div class="content-item" id="content-time">
+            <p>Thời gian đào tạo dành cho sinh viên FPT PolySchool trong 3 năm </p>
+            <div class="content-item-formality">
+                <button>
+                    Đăng ký ngay
+                </button>
+            </div>
+        </div>
+        <div class="content-item" id="content-fee">
+            <h2>HỌC KỲ VÀ HỌC PHÍ ÁP DỤNG GIAI ĐOẠN TRUNG CẤP</h2>
+            <h3>(Áp dụng nhập học 2025)</h3>
+            <h3>Áp dụng tại tất cả cơ sở đào tạo trên toàn quốc</h3>
+            <table>
+                <tbody>
+                    <tr>
+                        <td>NĂM</td>
+                        <td>HỌC KỲ</td>
+                        <td class="normal">HỌC PHÍ</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="3">Năm 1</td>
+                        <td>Học kì 1</td>
+                        <td>14.000.000 VNĐ</td>
+                    </tr>
+                    <tr>
+                        <td>Học kì 2</td>
+                        <td>14.000.000 VNĐ</td>
+                    </tr>
+                    <tr>
+                        <td>Học kì 3</td>
+                        <td>14.000.000 VNĐ</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="3">Năm 2</td>
+                        <td>Học kì 4</td>
+                        <td>14.000.000 VNĐ</td>
+                    </tr>
+                    <tr>
+                        <td>Học kì 5</td>
+                        <td>14.000.000 VNĐ</td>
+                    </tr>
+                    <tr>
+                        <td>Học kì 6</td>
+                        <td>14.000.000 VNĐ</td>
+                    </tr>
+                </tbody>
+            </table>
+            <h2>HỌC KỲ VÀ HỌC PHÍ ÁP DỤNG GIAI ĐOẠN CAO ĐẲNG</h2>
+            <h3>(Dự kiến)</h3>
+            <table>
+                <tbody>
+                    <tr>
+                        <td colspan="3">Cơ sở Hà Nội và TP. Hồ Chí Minh</td>
+                    </tr>
+                    <tr>
+                        <td>NĂM</td>
+                        <td>HỌC KỲ</td>
+                        <td class="normal">HỌC PHÍ</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="3">Năm 1</td>
+                        <td>Học kì 1</td>
+                        <td> 13.300.000 VNĐ</td>
+                    </tr>
+                    <tr>
+                        <td>Học kì 2</td>
+                        <td> 13.300.000 VNĐ</td>
+                    </tr>
+                    <tr>
+                        <td>Học kì 3</td>
+                        <td> 13.300.000 VNĐ</td>
+                    </tr>
+                    <tr>
+                        <td colspan="3">Cơ sở Đà Nẵng, Cần Thơ, Tây Nguyên, Hà Nam, Thanh Hóa, Hải Phòng và Quy
+                            Nhơn, Thái Nguyên và Đồng Nai</td>
+                    </tr>
+                    <tr>
+                        <td>NĂM</td>
+                        <td>HỌC KỲ</td>
+                        <td class="normal">HỌC PHÍ</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="3">Năm 2</td>
+                        <td>Học kì 4</td>
+                        <td>10.640.000 VNĐ</td>
+                    </tr>
+
+                    <tr>
+                        <td>Học kì 5</td>
+                        <td>10.640.000 VNĐ</td>
+                    </tr>
+                    <tr>
+                        <td>Học kì 6</td>
+                        <td>10.640.000 VNĐ</td>
+                    </tr>
+                </tbody>
+            </table>
+            <ul>
+                <li>Học phí giai đoạn Trung cấp áp dụng cho sinh viên nhập học năm 2025 và không thay đổi trong quá
+                    trình học</li>
+                <li>Học phí giai đoạn Cao đẳng áp dụng theo học phí tại thời điểm chuyển tiếp, Bảng trên là mức tham
+                    khảo năm 2025</li>
+                <li>Học phí thu theo kỳ, đóng vào đầu các học kỳ</li>
+                <li>Học phí đã bao gồm: Lệ phí nhập học, sách giáo trình chuyên ngành (Nếu có)</li>
+                <li>Học phí không bao gồm các chi phí cá nhân như: SGK Văn hóa phổ thông, BHYT, Võ Phục,...</li>
+                <li>100% sinh viên phải tự trang bị laptop để phục vụ học tập ngay từ học kỳ đầu tiên</li>
+            </ul>
+        </div>
+        <div class="content-item" id="content-batch">
+            <ul>
+                <li>Nhận hồ sơ và học phí đến 15/07/2024 (có thể kết thúc sớm nếu hết chỉ tiêu)</li>
+                <li>Thời gian khai giảng dự kiến: 15/08/2024</li>
+            </ul>
+        </div>
+
+        <div class="content-relative">
+            <h2>Chương trình đào tạo liên quan</h2>
+            <div class="content-relative-items">
+                <div class="content-relative-item">
+                    <div class="content-relative-item-img">
+                        <div class="content-relative-item-img-1 content-relative-item-img-img"></div>
+                        <a href="#">
+                            <button>START NOW</button>
+                        </a>
+                    </div>
+                    <a href="#">
+                        <h3>LẬP TRÌNH WEB</h3>
+                    </a>
+                </div>
+                <div class="content-relative-item">
+                    <div class="content-relative-item-img">
+                        <div class="content-relative-item-img-2 content-relative-item-img-img"></div>
+                        <a href="#">
+                            <button>START NOW</button>
+                        </a>
+                    </div>
+                    <a href="#">
+                        <h3>ỨNG DỤNG PHẦN MỀM</h3>
+                    </a>
+                </div>
+                <div class="content-relative-item">
+                    <div class="content-relative-item-img">
+                        <div class="content-relative-item-img-3 content-relative-item-img-img"></div>
+                        <a href="#">
+                            <button>START NOW</button>
+                        </a>
+                    </div>
+                    <a href="#">
+                        <h3>PHÁT TRIỂN PHẦN MỀM</h3>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+        <div class="content-commnent-form">
+            <hr>
+
+            <h2>BÌNH LUẬN</h2>
+            <p>Email của bạn sẽ không được hiển thị công khai. Các trường bắt buộc được đánh dấu
+                <span>*</span>
+            </p>
+
+            <label for="">Họ tên <span>*</span></label>
+            <input required type="text">
+
+            <label for="">Email <span>*</span></label>
+            <input type="email" name="">
+
+            <label for="">Bình luận</label>
+            <textarea name="" id=""></textarea>
+            <button>Gửi bình luận</button>
+        </div>
+    </div>
     </div>
 
     <my-footer></my-footer>

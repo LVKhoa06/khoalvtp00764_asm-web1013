@@ -100,12 +100,19 @@ function show(id) {
 // Hide | Show END
 
 // Active button START
-function activeButon(id) {
+function activeButon(id, id_content) {
     const menuItems = document.querySelectorAll(".content-buttons-btn");
+    const contentItem = document.querySelectorAll(".content-item");
     menuItems.forEach(item => {
         item.classList.remove("active");
     });
+    contentItem.forEach(item => {
+        item.classList.remove("show");
+    });
     const activeItem = document.getElementById(id);
     activeItem.classList.add("active");
+
+    const activeContent = document.getElementById(id_content);
+    activeContent.classList.add("show");
 }
 // Active button END

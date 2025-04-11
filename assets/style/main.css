@@ -292,3 +292,11 @@ a {
 }
 
 /* Title END */
+
+.show {
+    display: flex !important;
+}
+
+.hide {
+    display: none !important;
+}
